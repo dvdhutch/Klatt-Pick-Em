@@ -1,0 +1,67 @@
+.conference-tables {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.conference-section {
+    flex: 0 0 calc(50% - 1rem);  /* Takes up half the width minus gap */
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.team-button {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.875rem;
+    line-height: 1.2;
+}
+
+.team-button:hover {
+    transform: translateX(5px);
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #212529;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #e9ecef;
+    transform: translateX(-5px);
+}
+
+.back-button::before {
+    content: "←";
+    margin-right: 0.5rem;
+}
+
+#teamHeader {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+#teamName {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
